@@ -1,0 +1,5 @@
+---
+- name: Install monkey from the AUR
+  aur: name=monkey
+  become: yes
+  become_user: "{{ monkey_build_user }}"
